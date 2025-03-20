@@ -1,0 +1,123 @@
+:root {
+    --primary-color: #ade4ad;
+    --secondary-color: #bfd5e8;
+    --accent-color: #d0d1d2;
+    --background-color: white;
+    --text-color: black;
+    --white-color: white;
+    --water-color: #bfd5e8; /* Bleu clair pour la solution de l'eau */
+    --forest-color: #ade4ad; /* Vert clair pour la solution forêt */
+}
+
+@font-face {
+    font-family: "LULO CLEAN";
+    src: url("Polices/lulo_clean/lulo_clean_one_bold.otf");
+}
+
+@font-face {
+    font-family: "Avenir Light";
+    src: url("Polices/avenir_light/Avenir Light.ttf");
+}
+
+body {
+    font-family: "Avenir Light", Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    transition: background-color 0.3s ease-in-out;
+    line-height: 1.6;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.main-title {
+    text-align: center;
+    font-size: 32px;
+    color: var(--primary-color);
+    margin-bottom: 40px;
+    font-weight: bold;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 45%;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s;
+    border: 3px solid;
+    background: linear-gradient(to bottom right, var(--water-color), var(--forest-color));
+}
+
+.card.water {
+    background: var(--white-color);
+    border-color: var(--water-color);
+}
+
+.card.forest {
+    background: var(--white-color);
+    border-color: var(--forest-color);
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card h3 {
+    font-family: "LULO CLEAN", Arial, sans-serif;
+    color: var(--text-color);
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.button {
+    background-color: var(--accent-color);
+    color: var(--white-color);
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+}
+
+.card.water .button:hover {
+    background-color: var(--water-color);
+    color: var(--text-color);
+}
+
+.card.forest .button:hover {
+    background-color: var(--forest-color);
+    color: var(--text-color);
+}
+
+.info-section {
+    margin-top: 40px;
+    padding: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    margin-top: 30px;
+}

@@ -1,0 +1,106 @@
+:root {
+    --primary-color: #ade4ad;
+    --secondary-color: #bfd5e8;
+    --accent-color: #d0d1d2;
+    --background-color: white;
+    --text-color: black;
+    --white-color: white;
+}
+
+@font-face {
+    font-family: "LULO CLEAN";
+    src: url("Polices/lulo_clean/lulo_clean_one_bold.otf");
+  }
+
+  @font-face {
+    font-family: "Avenir Light";
+    src: url("Polices/avenir_light/Avenir\ Light.ttf");
+  }
+
+body {
+    font-family: "Avenir Light", Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    transition: background-color 0.3s ease-in-out;
+    line-height: 1.6;
+}
+
+h1 {
+    font-family: "LULO CLEAN", Arial, sans-serif;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 40px 0;
+}
+
+.main-title {
+    text-align: center;
+    font-size: 32px;
+    color: var(--primary-color);
+    margin-bottom: 40px;
+    font-weight: bold;
+}
+
+.section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    padding: 20px;
+}
+
+.section img {
+    width: 45%;
+    max-width: 500px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.section img:hover {
+    transform: scale(1.05);
+}
+
+.section div {
+    width: 50%;
+}
+
+.section h2 {
+    font-family: "LULO CLEAN", Arial, sans-serif;
+    color: var(--primary-color);
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    background: var(--secondary-color);
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+ul li:hover {
+    background: var(--primary-color);
+    color: var(--white-color);
+}
+
+.alternate {
+    flex-direction: row-reverse;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    margin-top: 30px;
+}
