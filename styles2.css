@@ -11,13 +11,13 @@
 
 @font-face {
     font-family: "LULO CLEAN";
-    src: url("Polices/lulo_clean/lulo_clean_one_bold.otf");
-}
+    src: url("lulo_clean_one_bold.otf");
+  }
 
-@font-face {
+  @font-face {
     font-family: "Avenir Light";
-    src: url("Polices/avenir_light/Avenir Light.ttf");
-}
+    src: url("AvenirLight.ttf");
+  }
 
 body {
     font-family: "Avenir Light", Arial, sans-serif;
